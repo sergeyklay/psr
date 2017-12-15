@@ -24,6 +24,12 @@ fi
 
 if test "$PHP_PSR" != "no"; then
 	AC_DEFINE(HAVE_PSR, 1, [Whether you have PSR])
-	psr_sources="psr.c"
+
+	psr_sources=
+	"psr.c
+	psr/container/container_interface.c"
+
 	PHP_NEW_EXTENSION(psr, $psr_sources, $ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
+
+	dnl TODO: PHP_INSTALL_HEADERS
 fi
