@@ -21,11 +21,19 @@ env:
         - ZEND_DONT_UNLOAD_MODULES=1
         - USE_ZEND_ALLOC=0
         - REPORT_EXIT_STATUS=1
+    matrix:
+        - CC="gcc"
+        - CC="clang"
 
 matrix:
     fast_finish: true
     allow_failures:
         - php: nightly
+    exclude:
+        - env: CC="gcc"
+          compiler: clang
+        - env: CC="clang"
+          compiler: gcc
 
 cache:
     apt: true
@@ -42,6 +50,12 @@ before_script:
 
 script:
     - make test
+
+addons:
+    apt:
+        packages:
+            - valgrind
+            - gdb
 
 notifications:
     email:
