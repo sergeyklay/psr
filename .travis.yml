@@ -17,8 +17,8 @@ compiler:
     - clang
 
 env:
-  global:
-       - ZEND_DONT_UNLOAD_MODULES=1
+    global:
+        - ZEND_DONT_UNLOAD_MODULES=1
         - USE_ZEND_ALLOC=0
         - REPORT_EXIT_STATUS=1
 
