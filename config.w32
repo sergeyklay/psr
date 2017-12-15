@@ -5,5 +5,6 @@ ARG_ENABLE("psr", "enable PSR support", "no");
 
 if (PHP_PSR != "no") {
     EXTENSION("psr", "psr.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1");
+    ADD_SOURCES(configure_module_dirname, "psr.c", "psr");
     AC_DEFINE('HAVE_ZEPHIR_PARSER', 1, 'Whether you have PSR');
 }
