@@ -23,7 +23,7 @@ extern zend_module_entry psr_module_entry;
 #endif
 
 #ifdef ZTS
-#include "<TSRM.h>"
+#include <TSRM.h>
 #endif
 
 #define PSR_G(v) ZEND_MODULE_GLOBALS_ACCESSOR(psr, v)
