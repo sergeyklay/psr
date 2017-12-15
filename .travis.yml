@@ -38,8 +38,12 @@ install:
     - make --silent -j"$(getconf _NPROCESSORS_ONLN)"
 
 before_script:
-  - ulimit -c unlimited -S || true
+    - ulimit -c unlimited -S || true
 
 script:
-  - cd $TRAVIS_BUILD_DIR
-  - make test
+    - make test
+
+notifications:
+    email:
+        on_success: never
+        on_failure: never
