@@ -4,7 +4,7 @@
 
 zend_class_entry *psr_container_containerinterface_ce;
 
-/** {{{ ContainerInterface method definitions */
+/** {{{ ContainerInterface methods definition */
 static const zend_function_entry psr_container_containerinterface_methods[] = {
 	ZEND_ABSTRACT_ME(psr_container_containerinterface, get, arginfo_psr_container_get)
 	ZEND_ABSTRACT_ME(psr_container_containerinterface, has, arginfo_psr_container_has)

@@ -7,6 +7,7 @@ if (PHP_PSR != "no") {
     EXTENSION("psr", "psr.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I" + configure_module_dirname);
 
     ADD_SOURCES(configure_module_dirname, "psr.c", "psr");
+    ADD_SOURCES(configure_module_dirname + "\\psr\\container", "container_exception_interface.c", "psr");
     ADD_SOURCES(configure_module_dirname + "\\psr\\container", "container_interface.c", "psr");
 
     AC_DEFINE('HAVE_ZEPHIR_PARSER', 1, 'Whether you have PSR');
