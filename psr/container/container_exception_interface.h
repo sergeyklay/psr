@@ -4,8 +4,8 @@
 #include "config.h"
 #endif
 
-#ifndef PSR_CONTAINER_EXCEPTION_INTERFACE_H
-#define PSR_CONTAINER_EXCEPTION_INTERFACE_H 1
+#ifndef SR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H
+#define SR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H 1
 
 #include <php.h>
 #include "php_psr.h"
@@ -14,7 +14,7 @@ extern zend_class_entry *psr_container_containerexceptioninterface_ce;
 
 ZEND_MINIT_FUNCTION(psr_container_containerexceptioninterface);
 
-#endif /* PSR_CONTAINER_EXCEPTION_INTERFACE_H */
+#endif /* SR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H */
 
 /*
  * Local Variables:
