@@ -2,7 +2,7 @@
 /* $Id$ */
 
 #ifndef PHP_PSR_H
-#define PHP_PSR_H
+#define PHP_PSR_H 1
 
 extern zend_module_entry psr_module_entry;
 #define phpext_psr_ptr &psr_module_entry
@@ -11,6 +11,8 @@ extern zend_module_entry psr_module_entry;
 #define PHP_PSR_NAME "psr"
 #define PHP_PSR_AUTHOR "Phalcon Team"
 #define PHP_PSR_DESCRIPTION "The module implementation for the PSR standards as established by the PHP-FIG group."
+
+#define PSR_STARTUP_FUNCTION(module) ZEND_MINIT_FUNCTION(psr_##module)
 
 #ifdef PHP_WIN32
 #	define PHP_PSR_API __declspec(dllexport)
@@ -21,7 +23,7 @@ extern zend_module_entry psr_module_entry;
 #endif
 
 #ifdef ZTS
-#include "TSRM.h"
+#include "<TSRM.h>"
 #endif
 
 #define PSR_G(v) ZEND_MODULE_GLOBALS_ACCESSOR(psr, v)
