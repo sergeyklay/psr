@@ -33,7 +33,8 @@ if test "$PHP_PSR" != "no"; then
 	PHP_NEW_EXTENSION(psr,
 		psr.c                                          \
 		psr/container/container_exception_interface.c  \
-		psr/container/container_interface.c,
+		psr/container/container_interface.c            \
+		psr/container/not_found_exception_interface.c,
 		$ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
 
 	dnl TODO: PHP_INSTALL_HEADERS

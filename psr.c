@@ -18,6 +18,7 @@ PHP_MINIT_FUNCTION(psr)
 {
 	PHP_PSR_MODULE_STARTUP(container_containerexceptioninterface);
 	PHP_PSR_MODULE_STARTUP(container_containerinterface);
+	PHP_PSR_MODULE_STARTUP(container_notfoundexceptioninterface);
 
 	return SUCCESS;
 }
