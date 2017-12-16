@@ -12,7 +12,7 @@
 
 BEGIN_EXTERN_C()
 
-extern zend_class_entry *psr_container_containerexceptioninterface_ce;
+extern PHP_PSR_API zend_class_entry *psr_container_containerexceptioninterface_ce;
 
 ZEND_MINIT_FUNCTION(psr_container_containerexceptioninterface);
 

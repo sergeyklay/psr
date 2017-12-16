@@ -22,7 +22,7 @@ ZEND_BEGIN_ARG_INFO_EX(arginfo_psr_container_has, 0, ZEND_RETURN_VALUE, 1)
 ZEND_END_ARG_INFO()
 /* }}} */
 
-extern zend_class_entry *psr_container_containerinterface_ce;
+extern PHP_PSR_API zend_class_entry *psr_container_containerinterface_ce;
 
 ZEND_MINIT_FUNCTION(psr_container_containerinterface);
 
