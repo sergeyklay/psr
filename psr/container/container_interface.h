@@ -13,11 +13,11 @@
 BEGIN_EXTERN_C()
 
 /* {{{ arginfo */
-ZEND_BEGIN_ARG_INFO_EX(arginfo_psr_container_get, 0, ZEND_RETURN_VALUE, 1)
+ZEND_BEGIN_ARG_INFO_EX(psr_container_containerinterface_arginfo_get, 0, ZEND_RETURN_VALUE, 1)
 	ZEND_ARG_INFO(0, id)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(arginfo_psr_container_has, 0, ZEND_RETURN_VALUE, 1)
+ZEND_BEGIN_ARG_INFO_EX(psr_container_containerinterface_arginfo_has, 0, ZEND_RETURN_VALUE, 1)
 	ZEND_ARG_INFO(0, id)
 ZEND_END_ARG_INFO()
 /* }}} */
