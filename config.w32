@@ -10,6 +10,7 @@ if (PHP_PSR != "no") {
     ADD_SOURCES(configure_module_dirname + "\\psr\\container", "container_exception_interface.c", "psr");
     ADD_SOURCES(configure_module_dirname + "\\psr\\container", "container_interface.c", "psr");
     ADD_SOURCES(configure_module_dirname + "\\psr\\container", "not_found_exception_interface.c", "psr");
+    ADD_SOURCES(configure_module_dirname + "\\psr\\http\\message", "uri_interface.c", "psr");
 
-    AC_DEFINE('HAVE_ZEPHIR_PARSER', 1, 'Whether you have PSR');
+    AC_DEFINE('HAVE_PSR', 1, 'Whether you have PSR');
 }
