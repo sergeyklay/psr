@@ -2,9 +2,10 @@
 
 #include "container_exception_interface.h"
 
+/* Psr\Container\ContainerExceptionInterface */
 PHP_PSR_API zend_class_entry *psr_container_containerexceptioninterface_ce;
 
-/* {{{ psr_container_containerexceptioninterface_methods
+/* {{{ Psr\Container\ContainerExceptionInterface functions[]
  */
 static const zend_function_entry psr_container_containerexceptioninterface_methods[] = {
 	ZEND_FE_END

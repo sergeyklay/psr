@@ -13,28 +13,28 @@
 BEGIN_EXTERN_C()
 
 /* {{{ arginfo */
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_get_scheme, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_scheme, 0)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_get_authority, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_authority, 0)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_get_user_info, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_user_info, 0)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_get_host, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_host, 0)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_get_port, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_port, 0)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_get_path, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_path, 0)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_get_query, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_query, 0)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_get_fragment, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_fragment, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_scheme, 0, ZEND_RETURN_VALUE, 1)
@@ -66,7 +66,7 @@ ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_fragment, 0, Z
 	ZEND_ARG_INFO(0, fragment)
 ZEND_END_ARG_INFO()
 
-ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_to_string, 0, ZEND_RETURN_VALUE, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_to_string, 0)
 ZEND_END_ARG_INFO()
 /* }}} */
 

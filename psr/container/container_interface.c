@@ -2,9 +2,10 @@
 
 #include "container_interface.h"
 
+/* Psr\Container\ContainerInterface */
 PHP_PSR_API zend_class_entry *psr_container_containerinterface_ce;
 
-/* {{{ psr_container_containerinterface_methods
+/* {{{ Psr\Container\ContainerInterface functions[]
  */
 static const zend_function_entry psr_container_containerinterface_methods[] = {
 	ZEND_ABSTRACT_ME(psr_container_containerinterface, get, psr_container_containerinterface_arginfo_get)

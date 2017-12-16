@@ -2,9 +2,10 @@
 
 #include "uri_interface.h"
 
+/* Psr\Http\Message\UriInterface */
 PHP_PSR_API zend_class_entry *psr_http_message_uriinterface_ce;
 
-/* {{{ psr_http_message_uriinterface_methods
+/* {{{ Psr\Http\Message\UriInterface functions[]
  */
 static const zend_function_entry psr_http_message_uriinterface_methods[] = {
 	ZEND_ABSTRACT_ME(psr_http_message_uriinterface, getScheme, psr_http_message_uriinterface_arginfo_get_scheme)
