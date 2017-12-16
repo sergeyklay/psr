@@ -9,8 +9,8 @@
 #include <php_ini.h>
 #include <ext/standard/info.h>
 
+#include "psr.h"
 #include "php_psr.h"
-#include "class_entries.h"
 
 /* {{{ PHP_MINIT_FUNCTION
  */
