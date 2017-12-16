@@ -12,4 +12,5 @@ Method [ <internal:psr> abstract public method getAuthority ] {
 
   - Parameters [0] {
   }
+  - Return [ string ]
 }

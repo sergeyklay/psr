@@ -13,4 +13,5 @@ Method [ <internal:psr> abstract public method withPort ] {
   - Parameters [1] {
     Parameter #0 [ <required> integer or NULL $port ]
   }
+  - Return [ "Psr\\Http\\Message\\UriInterface" ]
 }

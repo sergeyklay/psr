@@ -12,4 +12,5 @@ Method [ <internal:psr> abstract public method getPort ] {
 
   - Parameters [0] {
   }
+  - Return [ integer ]
 }

@@ -14,4 +14,5 @@ Method [ <internal:psr> abstract public method withUserInfo ] {
     Parameter #0 [ <required> string $user ]
     Parameter #1 [ <optional> string or NULL $password ]
   }
+  - Return [ "Psr\\Http\\Message\\UriInterface" ]
 }

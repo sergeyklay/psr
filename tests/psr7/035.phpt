@@ -13,4 +13,5 @@ Method [ <internal:psr> abstract public method withQuery ] {
   - Parameters [1] {
     Parameter #0 [ <required> string $query ]
   }
+  - Return [ "Psr\\Http\\Message\\UriInterface" ]
 }

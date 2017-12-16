@@ -12,4 +12,5 @@ Method [ <internal:psr> abstract public method getUserInfo ] {
 
   - Parameters [0] {
   }
+  - Return [ string ]
 }
