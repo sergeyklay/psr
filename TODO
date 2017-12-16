@@ -2,3 +2,8 @@ Before merge to Phalcon org:
 
 * Disable tests on Travis
 * Disable tests on Codecov
+
+After merge to Phalcon org:
+
+* Update README.md (links)
+* Enable tests on Travis

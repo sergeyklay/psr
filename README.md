@@ -2,7 +2,7 @@
 
 The module implementation for the PSR standards as established by the [PHP-FIG](http://www.php-fig.org/) group.
 
-[![Build Status](https://travis-ci.org/sergeyklay/psr.svg?branch=master)](https://travis-ci.org/sergeyklay/psr)
+[![Build on Linux](https://travis-ci.org/sergeyklay/psr.svg?branch=master)](https://travis-ci.org/sergeyklay/psr)
 
 ## Interfaces
 
@@ -13,6 +13,7 @@ The module implementation for the PSR standards as established by the [PHP-FIG](
 Prerequisite packages are:
 
 * PHP >= 7.0.0
+* PHP development headers and tools
 * `gcc` >= 4.4 | `clang` >= 3.x | `vc` >= 11
 * GNU `make` >= 3.81
 * `automake`
@@ -64,6 +65,9 @@ brew install automake
 
 ## Installation
 
+**NOTE:** If you wish to check older versions or formal, tagged release, please switch to the relevant
+[release](https://github.com/sergeyklay/psr/releases)/[tag](https://github.com/sergeyklay/psr/releases).
+
 You can install the PSR extension from source.
 
 Building from source is straightforward. Follow these instructions to generate a binary extension for your platform:
@@ -98,4 +102,4 @@ Finally, **restart the web server**.
 
 ## License
 
-This project is open source software licensed under the MIT License. See the [LICENSE](./LICENSE) file for more
+This project is open source software licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
