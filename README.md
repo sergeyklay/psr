@@ -65,7 +65,8 @@ brew install automake
 
 ## Installation
 
-**NOTE:** If you wish to check older versions or formal, tagged release, please switch to the relevant
+**NOTE:** The `master` branch will always contain the *latest unstable version*.
+If you wish to check older versions or formal, tagged release, please switch to the relevant
 [release](https://github.com/sergeyklay/psr/releases)/[tag](https://github.com/sergeyklay/psr/releases).
 
 You can install the PSR extension from source.
