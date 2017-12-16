@@ -21,6 +21,7 @@ addons:
         packages:
             - valgrind
             - gdb
+            - lcov
 
 notifications:
     email:
