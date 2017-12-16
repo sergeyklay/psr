@@ -11,7 +11,6 @@ echo $method->__toString(), PHP_EOL;
 Method [ <internal:psr> abstract public method has ] {
 
   - Parameters [1] {
-    Parameter #0 [ <required> string $id ]
+    Parameter #0 [ <required> $id ]
   }
-  - Return [ string ]
 }

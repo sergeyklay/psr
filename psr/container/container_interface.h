@@ -13,12 +13,12 @@
 BEGIN_EXTERN_C()
 
 /* {{{ arginfo */
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(psr_container_containerinterface_arginfo_get, ZEND_RETURN_VALUE, 1, IS_STRING, 0)
-	ZEND_ARG_TYPE_INFO(0, id, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO_EX(psr_container_containerinterface_arginfo_get, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, id, IS_UNDEF, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(psr_container_containerinterface_arginfo_has, ZEND_RETURN_VALUE, 1, IS_STRING, 0)
-	ZEND_ARG_TYPE_INFO(0, id, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO_EX(psr_container_containerinterface_arginfo_has, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, id, IS_UNDEF, 0)
 ZEND_END_ARG_INFO()
 /* }}} */
 
