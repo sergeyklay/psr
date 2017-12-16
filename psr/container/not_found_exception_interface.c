@@ -3,7 +3,7 @@
 #include "container_exception_interface.h"
 #include "not_found_exception_interface.h"
 
-zend_class_entry *psr_container_notfoundexceptioninterface_ce;
+PHP_PSR_API zend_class_entry *psr_container_notfoundexceptioninterface_ce;
 
 /* {{{ psr_container_notfoundexceptioninterface_methods
  */

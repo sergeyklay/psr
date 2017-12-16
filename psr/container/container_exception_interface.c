@@ -2,7 +2,7 @@
 
 #include "container_exception_interface.h"
 
-zend_class_entry *psr_container_containerexceptioninterface_ce;
+PHP_PSR_API zend_class_entry *psr_container_containerexceptioninterface_ce;
 
 /* {{{ psr_container_containerexceptioninterface_methods
  */
