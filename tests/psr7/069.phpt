@@ -1,15 +1,16 @@
 --TEST--
-Tests Psr\Http\Message\UriInterface::__toString method
+Tests Psr\Http\Message\UriInterface::withFragment method
 --SKIPIF--
 <?php if (!extension_loaded("psr")) print "skip The psr extension is not loaded"; ?>
 --FILE--
 <?php
-$method = new ReflectionMethod("Psr\\Http\\Message\\UriInterface", "__toString");
+$method = new ReflectionMethod("Psr\\Http\\Message\\UriInterface", "withFragment");
 echo $method->__toString(), PHP_EOL;
 ?>
 --EXPECT--
-Method [ <internal:psr> abstract public method __toString ] {
+Method [ <internal:psr> abstract public method withFragment ] {
 
-  - Parameters [0] {
+  - Parameters [1] {
+    Parameter #0 [ <required> $fragment ]
   }
 }

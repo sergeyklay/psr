@@ -1,16 +1,16 @@
 --TEST--
-Tests Psr\Http\Message\UriInterface::withPort method
+Tests Psr\Http\Message\UriInterface::withPath method
 --SKIPIF--
 <?php if (!extension_loaded("psr")) print "skip The psr extension is not loaded"; ?>
 --FILE--
 <?php
-$method = new ReflectionMethod("Psr\\Http\\Message\\UriInterface", "withPort");
+$method = new ReflectionMethod("Psr\\Http\\Message\\UriInterface", "withPath");
 echo $method->__toString(), PHP_EOL;
 ?>
 --EXPECT--
-Method [ <internal:psr> abstract public method withPort ] {
+Method [ <internal:psr> abstract public method withPath ] {
 
   - Parameters [1] {
-    Parameter #0 [ <required> $port ]
+    Parameter #0 [ <required> $path ]
   }
 }
