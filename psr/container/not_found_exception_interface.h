@@ -10,9 +10,13 @@
 #include <php.h>
 #include "php_psr.h"
 
+BEGIN_EXTERN_C()
+
 extern zend_class_entry *psr_container_notfoundexceptioninterface_ce;
 
 ZEND_MINIT_FUNCTION(psr_container_notfoundexceptioninterface);
+
+END_EXTERN_C()
 
 #endif /* PSR_CONTAINER_NOT_FOUND_EXCEPTION_INTERFACE_H */
 
