@@ -14,60 +14,61 @@ BEGIN_EXTERN_C()
 
 /* {{{ arginfo */
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_get_scheme, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_scheme, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_get_authority, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_authority, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_get_user_info, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_user_info, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_get_host, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_host, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_get_port, IS_LONG, 0)
+/* return null|int The URI port */
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_port, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_get_path, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_path, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_get_query, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_query, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_get_fragment, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_fragment, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(psr_http_message_uriinterface_arginfo_with_scheme, ZEND_RETURN_VALUE, 1, Psr\\Http\\Message\\UriInterface, 0)
-	ZEND_ARG_TYPE_INFO(0, scheme, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_scheme, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, scheme, IS_UNDEF, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(psr_http_message_uriinterface_arginfo_with_user_info, ZEND_RETURN_VALUE, 1, Psr\\Http\\Message\\UriInterface, 0)
-	ZEND_ARG_TYPE_INFO(0, user, IS_STRING, 0)
-	ZEND_ARG_TYPE_INFO(0, password, IS_STRING, 1)
+ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_user_info, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, user, IS_UNDEF, 0)
+	ZEND_ARG_TYPE_INFO(0, password, IS_UNDEF, 1)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(psr_http_message_uriinterface_arginfo_with_host, ZEND_RETURN_VALUE, 1, Psr\\Http\\Message\\UriInterface, 0)
-	ZEND_ARG_TYPE_INFO(0, host, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_host, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, host, IS_UNDEF, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(psr_http_message_uriinterface_arginfo_with_port, ZEND_RETURN_VALUE, 1, Psr\\Http\\Message\\UriInterface, 0)
-	ZEND_ARG_TYPE_INFO(0, port, IS_LONG, 1)
+ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_port, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, port, IS_UNDEF, 1)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(psr_http_message_uriinterface_arginfo_with_path, ZEND_RETURN_VALUE, 1, Psr\\Http\\Message\\UriInterface, 0)
-	ZEND_ARG_TYPE_INFO(0, path, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_path, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, path, IS_UNDEF, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(psr_http_message_uriinterface_arginfo_with_query, ZEND_RETURN_VALUE, 1, Psr\\Http\\Message\\UriInterface, 0)
-	ZEND_ARG_TYPE_INFO(0, query, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_query, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, query, IS_UNDEF, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(psr_http_message_uriinterface_arginfo_with_fragment, ZEND_RETURN_VALUE, 1, Psr\\Http\\Message\\UriInterface, 0)
-	ZEND_ARG_TYPE_INFO(0, fragment, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_fragment, 0, ZEND_RETURN_VALUE, 1)
+	ZEND_ARG_TYPE_INFO(0, fragment, IS_UNDEF, 0)
 ZEND_END_ARG_INFO()
 
-PHP_PSR_BEGIN_ARG_WITH_RETURN_TYPE_INFO(psr_http_message_uriinterface_arginfo_to_string, IS_STRING, 0)
+ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_to_string, 0)
 ZEND_END_ARG_INFO()
 /* }}} */
 
