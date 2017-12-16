@@ -13,5 +13,5 @@ Method [ <internal:psr> abstract public method withHost ] {
   - Parameters [1] {
     Parameter #0 [ <required> string $host ]
   }
-  - Return [ "Psr\\Http\\Message\\UriInterface" ]
+  - Return [ Psr\Http\Message\UriInterface ]
 }

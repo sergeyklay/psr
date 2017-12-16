@@ -13,5 +13,5 @@ Method [ <internal:psr> abstract public method withPath ] {
   - Parameters [1] {
     Parameter #0 [ <required> string $path ]
   }
-  - Return [ "Psr\\Http\\Message\\UriInterface" ]
+  - Return [ Psr\Http\Message\UriInterface ]
 }

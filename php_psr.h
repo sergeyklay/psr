@@ -29,7 +29,7 @@ extern zend_module_entry psr_module_entry;
 #define PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(name, return_reference, required_num_args, class_name, allow_null) \
 	ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(name, return_reference, required_num_args, IS_OBJECT, #class_name, allow_null)
 #define PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO(name, class_name, allow_null) \
-	PHP_PSR_BEGIN_ARG_WITH_RETURN_OBJ_INFO_EX(name, 0, -1, #class_name, allow_null)
+	ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(name, 0, -1, #class_name, allow_null)
 
 #endif
 
