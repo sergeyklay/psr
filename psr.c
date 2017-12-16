@@ -12,6 +12,10 @@
 #include "psr.h"
 #include "php_psr.h"
 
+extern PHP_MINIT_FUNCTION(psr);
+extern PHP_MSHUTDOWN_FUNCTION(psr);
+extern PHP_MINFO_FUNCTION(psr);
+
 /* {{{ PHP_MINIT_FUNCTION
  */
 PHP_MINIT_FUNCTION(psr)
