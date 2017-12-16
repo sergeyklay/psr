@@ -13,4 +13,5 @@ Method [ <internal:psr> abstract public method get ] {
   - Parameters [1] {
     Parameter #0 [ <required> string $id ]
   }
+  - Return [ string ]
 }
