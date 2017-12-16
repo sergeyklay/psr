@@ -12,5 +12,4 @@ Method [ <internal:psr> abstract public method getScheme ] {
 
   - Parameters [0] {
   }
-  - Return [ string ]
 }

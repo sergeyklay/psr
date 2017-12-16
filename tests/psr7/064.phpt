@@ -11,7 +11,6 @@ echo $method->__toString(), PHP_EOL;
 Method [ <internal:psr> abstract public method withScheme ] {
 
   - Parameters [1] {
-    Parameter #0 [ <required> string $scheme ]
+    Parameter #0 [ <required> $scheme ]
   }
-  - Return [ Psr\Http\Message\UriInterface ]
 }

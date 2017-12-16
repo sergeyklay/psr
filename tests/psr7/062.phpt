@@ -12,5 +12,4 @@ Method [ <internal:psr> abstract public method getQuery ] {
 
   - Parameters [0] {
   }
-  - Return [ string ]
 }
