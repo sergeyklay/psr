@@ -4,7 +4,8 @@
 
 zend_class_entry *psr_container_containerexceptioninterface_ce;
 
-/** {{{ ContainerExceptionInterface methods definition */
+/* {{{ psr_container_containerexceptioninterface_methods
+ */
 static const zend_function_entry psr_container_containerexceptioninterface_methods[] = {
 	ZEND_FE_END
 };

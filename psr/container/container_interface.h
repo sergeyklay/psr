@@ -10,6 +10,7 @@
 #include <php.h>
 #include "php_psr.h"
 
+/* {{{ arginfo */
 ZEND_BEGIN_ARG_INFO_EX(arginfo_psr_container_get, 0, ZEND_RETURN_VALUE, 1)
 	ZEND_ARG_INFO(0, id)
 ZEND_END_ARG_INFO()
@@ -17,6 +18,7 @@ ZEND_END_ARG_INFO()
 ZEND_BEGIN_ARG_INFO_EX(arginfo_psr_container_has, 0, ZEND_RETURN_VALUE, 1)
 	ZEND_ARG_INFO(0, id)
 ZEND_END_ARG_INFO()
+/* }}} */
 
 extern zend_class_entry *psr_container_containerinterface_ce;
 

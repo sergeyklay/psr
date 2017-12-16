@@ -5,7 +5,8 @@
 
 zend_class_entry *psr_container_notfoundexceptioninterface_ce;
 
-/** {{{ NotFoundExceptionInterface methods definition */
+/* {{{ psr_container_notfoundexceptioninterface_methods
+ */
 static const zend_function_entry psr_container_notfoundexceptioninterface_methods[] = {
 	ZEND_FE_END
 };
