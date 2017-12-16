@@ -61,7 +61,10 @@ before_script:
     - ulimit -c unlimited -S || true
 
 script:
+    - $(phpenv which php) -d extension=$(pwd)/modules/psr.so --ri psr
     - make test
+    - make install
+    - echo "extension=psr.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini && php --ri psr
 
 after_success:
     - if [[ ! -z "${CODECOV_TOKEN}" ]]; then bash <(curl -s https://codecov.io/bash); fi;
