@@ -18,8 +18,8 @@ Prerequisite packages are:
 * `automake`
 * `autoconf`
 
-You will need PHP7 development headers.
-If PHP7 was manually installed, these should be available by default.
+You will need PHP development headers.
+If PHP was manually installed, these should be available by default.
 Otherwise, you will need to fetch them from a repository.
 
 **Note:** the package name may vary.
@@ -64,7 +64,7 @@ brew install automake
 
 ## Installation
 
-You can install the Tideways extension from source.
+You can install the PSR extension from source.
 
 Building from source is straightforward. Follow these instructions to generate a binary extension for your platform:
 
@@ -79,7 +79,7 @@ sudo make install
 
 If you have specific php versions running:
 
-```
+```sh
 git clone https://github.com/sergeyklay/psr.git
 cd psr
 phpize
