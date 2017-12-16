@@ -16,6 +16,17 @@ compiler:
     - gcc
     - clang
 
+addons:
+    apt:
+        packages:
+            - valgrind
+            - gdb
+
+notifications:
+    email:
+        on_success: never
+        on_failure: never
+
 env:
     global:
         - ZEND_DONT_UNLOAD_MODULES=1
@@ -52,13 +63,5 @@ before_script:
 script:
     - make test
 
-addons:
-    apt:
-        packages:
-            - valgrind
-            - gdb
-
-notifications:
-    email:
-        on_success: never
-        on_failure: never
+after_success:
+    - if [[ ! -z "${CODECOV_TOKEN}" ]]; then bash <(curl -s https://codecov.io/bash); fi;
