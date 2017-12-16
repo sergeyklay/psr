@@ -33,6 +33,7 @@ env:
         - USE_ZEND_ALLOC=0
         - REPORT_EXIT_STATUS=1
         - NO_INTERACTION=1
+        - TEST_PHP_ARGS="--show-diff"
     matrix:
         - CC="gcc"
         - CC="clang"
