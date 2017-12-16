@@ -11,7 +11,7 @@ echo $method->__toString(), PHP_EOL;
 Method [ <internal:psr> abstract public method withUserInfo ] {
 
   - Parameters [2] {
-    Parameter #0 [ <required> $user ]
-    Parameter #1 [ <optional> $password ]
+    Parameter #0 [ <required> string $user ]
+    Parameter #1 [ <optional> string or NULL $password ]
   }
 }

@@ -11,6 +11,6 @@ echo $method->__toString(), PHP_EOL;
 Method [ <internal:psr> abstract public method withPort ] {
 
   - Parameters [1] {
-    Parameter #0 [ <required> $port ]
+    Parameter #0 [ <required> integer or NULL $port ]
   }
 }

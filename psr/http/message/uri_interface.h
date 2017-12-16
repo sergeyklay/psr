@@ -38,32 +38,32 @@ ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_get_fragment, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_scheme, 0, ZEND_RETURN_VALUE, 1)
-	ZEND_ARG_INFO(0, scheme)
+	ZEND_ARG_TYPE_INFO(0, scheme, IS_STRING, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_user_info, 0, ZEND_RETURN_VALUE, 1)
-	ZEND_ARG_INFO(0, user)
-	ZEND_ARG_INFO(0, password)
+	ZEND_ARG_TYPE_INFO(0, user, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, password, IS_STRING, 1)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_host, 0, ZEND_RETURN_VALUE, 1)
-	ZEND_ARG_INFO(0, host)
+	ZEND_ARG_TYPE_INFO(0, host, IS_STRING, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_port, 0, ZEND_RETURN_VALUE, 1)
-	ZEND_ARG_INFO(0, port)
+	ZEND_ARG_TYPE_INFO(0, port, IS_LONG, 1)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_path, 0, ZEND_RETURN_VALUE, 1)
-	ZEND_ARG_INFO(0, path)
+	ZEND_ARG_TYPE_INFO(0, path, IS_STRING, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_query, 0, ZEND_RETURN_VALUE, 1)
-	ZEND_ARG_INFO(0, query)
+	ZEND_ARG_TYPE_INFO(0, query, IS_STRING, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO_EX(psr_http_message_uriinterface_arginfo_with_fragment, 0, ZEND_RETURN_VALUE, 1)
-	ZEND_ARG_INFO(0, fragment)
+	ZEND_ARG_TYPE_INFO(0, fragment, IS_STRING, 0)
 ZEND_END_ARG_INFO()
 
 ZEND_BEGIN_ARG_INFO(psr_http_message_uriinterface_arginfo_to_string, 0)
