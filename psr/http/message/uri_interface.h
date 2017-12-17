@@ -1,14 +1,14 @@
 /* $Id$ */
 
 #ifdef HAVE_CONFIG_H
-#include "config.h"
+#include "../../../config.h"
 #endif
 
 #ifndef PSR_HTTP_MESSAGE_URI_INTERFACE_H
 #define PSR_HTTP_MESSAGE_URI_INTERFACE_H 1
 
 #include <php.h>
-#include "php_psr.h"
+#include "../../../php_psr.h"
 
 BEGIN_EXTERN_C()
 

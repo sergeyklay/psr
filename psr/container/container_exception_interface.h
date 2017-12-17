@@ -1,14 +1,14 @@
 /* $Id$ */
 
 #ifdef HAVE_CONFIG_H
-#include "config.h"
+#include "../../config.h"
 #endif
 
-#ifndef SR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H
-#define SR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H 1
+#ifndef PSR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H
+#define PSR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H 1
 
 #include <php.h>
-#include "php_psr.h"
+#include "../../php_psr.h"
 
 BEGIN_EXTERN_C()
 
@@ -18,7 +18,7 @@ ZEND_MINIT_FUNCTION(psr_container_containerexceptioninterface);
 
 END_EXTERN_C()
 
-#endif /* SR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H */
+#endif /* PSR_CONTAINER_CONTAINER_EXCEPTION_INTERFACE_H */
 
 /*
  * Local Variables:

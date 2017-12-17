@@ -45,5 +45,5 @@ if test "$PHP_PSR" != "no"; then
 		psr/http/message/uri_interface.c,
 		$ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
 
-	PHP_INSTALL_HEADERS([ext/psr], [php_psr.h])
+	PHP_INSTALL_HEADERS([ext/psr], [php_psr.h psr/container/container_exception_interface.h psr/container/container_interface.h psr/container/not_found_exception_interface.h psr/http/message/message_interface.h psr/http/message/request_interface.h psr/http/message/response_interface.h psr/http/message/server_request_interface.h psr/http/message/stream_interface.h psr/http/message/uploaded_file_interface.h psr/http/message/uri_interface.h])
 fi
