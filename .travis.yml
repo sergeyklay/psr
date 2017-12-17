@@ -22,6 +22,7 @@ addons:
             - valgrind
             - gdb
             - lcov
+            - tree
 
 notifications:
     email:
@@ -68,3 +69,5 @@ script:
     - make test
     - make install
     - echo "extension=psr.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini && php --ri psr
+    - make install-headers
+    - tree `$(phpenv which php-config) --include-dir`/ext/psr
