@@ -30,6 +30,7 @@ fi
 if test "$PHP_PSR" != "no"; then
 	AC_DEFINE(HAVE_PSR, 1, [Whether you have PSR])
 
+	PHP_SUBST(PSR_SHARED_LIBADD)
 	PHP_NEW_EXTENSION(psr,
 		psr.c                                          \
 		psr/container/container_exception_interface.c  \
