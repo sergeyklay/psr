@@ -166,15 +166,13 @@ build_script:
     - cp %APPVEYOR_BUILD_FOLDER%\README.md %APPVEYOR_BUILD_FOLDER%\package\
     - cp %APPVEYOR_BUILD_FOLDER%\README.WIN32-BUILD-SYSTEM %APPVEYOR_BUILD_FOLDER%\package\
     - cp %APPVEYOR_BUILD_FOLDER%\NO_WARRANTY %APPVEYOR_BUILD_FOLDER%\package\
-    - cd %APPVEYOR_BUILD_FOLDER%\package
-    - 'dir'
 
 after_build:
     # ==================================================
     - echo Collect artifacts and zip
     # ==================================================
     - cd %APPVEYOR_BUILD_FOLDER%\package
-    - 7z a %RELEASE_ZIPBALL%.zip *.*
+    - 7z a %RELEASE_ZIPBALL%.zip *
     - mv %RELEASE_ZIPBALL%.zip %APPVEYOR_BUILD_FOLDER%\
 
 on_failure:
