@@ -8,6 +8,10 @@ environment:
         - PHP_TARGET: 7.0
           PHP_VC: 14
           PHP_MAJOR: 7
+          PHP_TYPE: "Win32"
+        - PHP_TARGET: 7.0
+          PHP_VC: 14
+          PHP_MAJOR: 7
           PHP_TYPE: "nts-Win32"
         - PHP_TARGET: 7.1
           PHP_VC: 14
