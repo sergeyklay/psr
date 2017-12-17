@@ -91,14 +91,12 @@ install:
             $env:ARCH='x86'
         }
 
-        $env:PHP_DEPS_URL="http://windows.php.net/downloads/php-sdk/deps-${env:PHP_TARGET}-vc${env:PHP_VC}-${env:PLATFORM}.7z"
-
-        }
         If ($env:PHP_TYPE -Match "nts-Win32") {
             $env:RELEASE_ZIPBALL="psr_${env:PLATFORM}_vc${env:PHP_VC}_php${env:PHP_TARGET}-nts_${env:APPVEYOR_BUILD_VERSION}"
         } Else {
             $env:RELEASE_ZIPBALL="psr_${env:PLATFORM}_vc${env:PHP_VC}_php${env:PHP_TARGET}_${env:APPVEYOR_BUILD_VERSION}"
         }
+    - ps: $env:PHP_DEPS_URL="http://windows.php.net/downloads/php-sdk/deps-${env:PHP_TARGET}-vc${env:PHP_VC}-${env:PLATFORM}.7z"
     # ==================================================
     - echo Initializing Build
     # ==================================================
