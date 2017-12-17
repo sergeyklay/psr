@@ -1,4 +1,4 @@
-# This should be always correspond with php_psr.h
+# This should always correspond with php_psr.h as well as VERSION file
 version: 0.1.0-{build}
 
 image: Visual Studio 2017
@@ -90,10 +90,9 @@ install:
         } Else {
             $env:ARCH='x86'
         }
-        If ($env:PHP_TARGET -eq '5.5') {
-            $env:PHP_DEPS_URL="http://windows.php.net/downloads/php-sdk/archives/deps-${env:PHP_TARGET}-vc${env:PHP_VC}-${env:PLATFORM}.7z"
-        } Else {
-            $env:PHP_DEPS_URL="http://windows.php.net/downloads/php-sdk/deps-${env:PHP_TARGET}-vc${env:PHP_VC}-${env:PLATFORM}.7z"
+
+        $env:PHP_DEPS_URL="http://windows.php.net/downloads/php-sdk/deps-${env:PHP_TARGET}-vc${env:PHP_VC}-${env:PLATFORM}.7z"
+
         }
         If ($env:PHP_TYPE -Match "nts-Win32") {
             $env:RELEASE_ZIPBALL="psr_${env:PLATFORM}_vc${env:PHP_VC}_php${env:PHP_TARGET}-nts_${env:APPVEYOR_BUILD_VERSION}"
@@ -153,3 +152,51 @@ install:
     - SET PATH=%PHP_SRC%\%RELEASE_FOLDER%;%PATH%
     - php -v
     - php --ri psr
+
+build_script:
+    # ==================================================
+    - echo Creating package to zip
+    # ==================================================
+    - mkdir %APPVEYOR_BUILD_FOLDER%\package
+    - cd %APPVEYOR_BUILD_FOLDER%\package
+    # dll
+    - cp %PHP_SRC%\%RELEASE_FOLDER%\php_psr.dll .\
+    # docs
+    - cp %APPVEYOR_BUILD_FOLDER%\LICENSE .\
+    - cp %APPVEYOR_BUILD_FOLDER%\CREDITS .\
+    - cp %APPVEYOR_BUILD_FOLDER%\VERSION .\
+    - cp %APPVEYOR_BUILD_FOLDER%\NEWS .\
+    - cp %APPVEYOR_BUILD_FOLDER%\README.md .\
+    - cp %APPVEYOR_BUILD_FOLDER%\README.WIN32-BUILD-SYSTEM .\
+    - cp %APPVEYOR_BUILD_FOLDER%\NO_WARRANTY .\
+
+after_build:
+    # ==================================================
+    - echo Collect artifacts and zip
+    # ==================================================
+    - cd %APPVEYOR_BUILD_FOLDER%\package
+    - 7z a %RELEASE_ZIPBALL%.zip *.*
+    - mv %RELEASE_ZIPBALL%.zip %APPVEYOR_BUILD_FOLDER%\
+
+on_failure:
+    - 'dir'
+    - ps: >-
+        If (Test-Path -Path ${env:PHP_SRC}\compile-errors.log) {
+            type ${env:PHP_SRC}\compile-errors.log
+        }
+
+        If (Test-Path -Path ${env:PHP_SRC}\compile.log) {
+            type ${env:PHP_SRC}\compile.log
+        }
+
+        If (Test-Path -Path ${env:PHP_SRC}\configure.js) {
+            type ${env:PHP_SRC}\configure.js
+        }
+
+on_success:
+    - 'dir'
+
+artifacts:
+    - path: '.\*.zip'
+      type: zip
+      name: PSR
