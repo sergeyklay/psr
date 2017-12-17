@@ -35,6 +35,7 @@ if test "$PHP_PSR" != "no"; then
 		psr/container/container_exception_interface.c  \
 		psr/container/container_interface.c            \
 		psr/container/not_found_exception_interface.c  \
+		psr/http/message/message_interface.c           \
 		psr/http/message/stream_interface.c            \
 		psr/http/message/uri_interface.c,
 		$ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
