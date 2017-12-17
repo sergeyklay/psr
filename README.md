@@ -3,6 +3,7 @@
 The module implementation for the PSR standards as established by the [PHP-FIG](http://www.php-fig.org/) group.
 
 [![Build on Linux](https://travis-ci.org/sergeyklay/psr.svg?branch=master)](https://travis-ci.org/sergeyklay/psr)
+[![Build on Windows](https://ci.appveyor.com/api/projects/status/2ml0nybe7lixy7ao/branch/master?svg=true)](https://ci.appveyor.com/project/sergeyklay/psr/branch/master)
 
 ## Interfaces
 
@@ -65,6 +66,12 @@ brew install automake
 ```
 
 ## Installation
+
+### Windows
+
+You can compile PSR extension yourself. For more see: [README.WIN32-BUILD-SYSTEM](./README.WIN32-BUILD-SYSTEM).
+
+### Linux / macOS
 
 **NOTE:** The `master` branch will always contain the *latest unstable version*.
 If you wish to check older versions or formal, tagged release, please switch to the relevant

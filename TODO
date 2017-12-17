@@ -1,8 +1,11 @@
 Before merge to Phalcon org:
 
-* Disable tests on Travis
+* Disable tests on Travis CI
+* Disable tests on AppVeyor CI
 
 After merge to Phalcon org:
 
 * Update README.md (links)
-* Enable tests on Travis
+* Enable tests on Travis CI
+* Enable tests on AppVeyor CI
+* Clean this TODO
