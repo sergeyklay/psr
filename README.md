@@ -5,10 +5,16 @@ The module implementation for the PSR standards as established by the [PHP-FIG](
 [![Build on Linux](https://travis-ci.org/sergeyklay/psr.svg?branch=master)](https://travis-ci.org/sergeyklay/psr)
 [![Build on Windows](https://ci.appveyor.com/api/projects/status/2ml0nybe7lixy7ao/branch/master?svg=true)](https://ci.appveyor.com/project/sergeyklay/psr/branch/master)
 
+Supported PHP versions: **7.0**, **7.1**, **7.2**, **7.3** (nightly)
+
+**NOTE:** The `master` branch will always contain the *latest unstable version*.
+If you wish to check older versions or formal, tagged release, please switch to the relevant
+[release](https://github.com/sergeyklay/psr/releases)/[tag](https://github.com/sergeyklay/psr/releases).
+
 ## Interfaces
 
-* PSR-7: [HTTP message interfaces](http://www.php-fig.org/psr/psr-7/)
-* PSR-11: [Container interface](http://www.php-fig.org/psr/psr-11/)
+* PSR-7: [HTTP message interfaces](http://www.php-fig.org/psr/psr-7)
+* PSR-11: [Container interface](http://www.php-fig.org/psr/psr-11)
 
 ## Requirements
 
@@ -69,13 +75,19 @@ brew install automake
 
 ### Windows
 
-You can compile PSR extension yourself. For more see: [README.WIN32-BUILD-SYSTEM](./README.WIN32-BUILD-SYSTEM).
+To install PSR extension on Windows:
+
+1. Download [PSR extension for Windows](https://github.com/sergeyklay/psr/releases/latest)
+2. Extract the DLL file and copy it to your PHP extensions directory
+3. Edit your php.ini file and add this line:
+   ```ini
+   extension=php_psr.dll
+   ```
+4. Finally, restart your web server
+
+**NOTE:** Also you can compile PSR extension yourself. For more see: [README.WIN32-BUILD-SYSTEM](./README.WIN32-BUILD-SYSTEM).
 
 ### Linux / macOS
-
-**NOTE:** The `master` branch will always contain the *latest unstable version*.
-If you wish to check older versions or formal, tagged release, please switch to the relevant
-[release](https://github.com/sergeyklay/psr/releases)/[tag](https://github.com/sergeyklay/psr/releases).
 
 You can install the PSR extension from source.
 
@@ -111,4 +123,7 @@ Finally, **restart the web server**.
 
 ## License
 
-This project is open source software licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
+PSR PHP extension is open source software licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
+
+
+PSR Interfaces: Copyright (c) 2014-present [PHP Framework Interoperability Group](http://www.php-fig.org/).
