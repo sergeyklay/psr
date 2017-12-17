@@ -33,13 +33,12 @@ matrix:
 clone_depth: 1
 clone_folder: c:\projects\psr
 
-#only_commits:
-#    message: /\[win build\]/
+only_commits:
+   message: /\[win build\]/
 
 branches:
     only:
         - master
-        - development
 
 os: Windows Server 2012 R2
 
