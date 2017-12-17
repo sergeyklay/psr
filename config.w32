@@ -1,10 +1,10 @@
 // $Id$
 // vim:ft=javascript
 
-ARG_ENABLE("psr", "enable PSR support", "no");
+ARG_ENABLE("psr", "whether to enable PSR support", "no");
 
 if (PHP_PSR != "no") {
-    EXTENSION("psr", "psr.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I" + configure_module_dirname);
+    EXTENSION("psr", "psr.c", PHP_PSR_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1 -I" + configure_module_dirname);
 
     ADD_SOURCES(configure_module_dirname, "psr.c", "psr");
     ADD_SOURCES(configure_module_dirname + "\\psr\\container", "container_exception_interface.c", "psr");
