@@ -156,17 +156,18 @@ build_script:
     - echo Creating package to zip
     # ==================================================
     - mkdir %APPVEYOR_BUILD_FOLDER%\package
-    - cd %APPVEYOR_BUILD_FOLDER%\package
     # dll
-    - cp %PHP_SRC%\%RELEASE_FOLDER%\php_psr.dll .\
+    - cp %PHP_SRC%\%RELEASE_FOLDER%\php_psr.dll %APPVEYOR_BUILD_FOLDER%\package\
     # docs
-    - cp %APPVEYOR_BUILD_FOLDER%\LICENSE .\
-    - cp %APPVEYOR_BUILD_FOLDER%\CREDITS .\
-    - cp %APPVEYOR_BUILD_FOLDER%\VERSION .\
-    - cp %APPVEYOR_BUILD_FOLDER%\NEWS .\
-    - cp %APPVEYOR_BUILD_FOLDER%\README.md .\
-    - cp %APPVEYOR_BUILD_FOLDER%\README.WIN32-BUILD-SYSTEM .\
-    - cp %APPVEYOR_BUILD_FOLDER%\NO_WARRANTY .\
+    - cp %APPVEYOR_BUILD_FOLDER%\LICENSE %APPVEYOR_BUILD_FOLDER%\package\
+    - cp %APPVEYOR_BUILD_FOLDER%\CREDITS %APPVEYOR_BUILD_FOLDER%\package\
+    - cp %APPVEYOR_BUILD_FOLDER%\VERSION %APPVEYOR_BUILD_FOLDER%\package\
+    - cp %APPVEYOR_BUILD_FOLDER%\NEWS %APPVEYOR_BUILD_FOLDER%\package\
+    - cp %APPVEYOR_BUILD_FOLDER%\README.md %APPVEYOR_BUILD_FOLDER%\package\
+    - cp %APPVEYOR_BUILD_FOLDER%\README.WIN32-BUILD-SYSTEM %APPVEYOR_BUILD_FOLDER%\package\
+    - cp %APPVEYOR_BUILD_FOLDER%\NO_WARRANTY %APPVEYOR_BUILD_FOLDER%\package\
+    - cd %APPVEYOR_BUILD_FOLDER%\package
+    - 'dir'
 
 after_build:
     # ==================================================
