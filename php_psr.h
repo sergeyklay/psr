@@ -7,7 +7,7 @@
 extern zend_module_entry psr_module_entry;
 #define phpext_psr_ptr &psr_module_entry
 
-#define PHP_PSR_VERSION "0.0.1"
+#define PHP_PSR_VERSION "0.1.0"
 #define PHP_PSR_NAME "psr"
 #define PHP_PSR_AUTHOR "Phalcon Team"
 #define PHP_PSR_DESCRIPTION "The module implementation for the PSR standards as established by the PHP-FIG group."
@@ -49,6 +49,10 @@ extern zend_module_entry psr_module_entry;
 #endif
 
 #define PSR_G(v) ZEND_MODULE_GLOBALS_ACCESSOR(psr, v)
+
+extern PHP_MINIT_FUNCTION(psr);
+extern PHP_MSHUTDOWN_FUNCTION(psr);
+extern PHP_MINFO_FUNCTION(psr);
 
 #if defined(ZTS) && defined(COMPILE_DL_PSR)
 ZEND_TSRMLS_CACHE_EXTERN()

@@ -43,6 +43,5 @@ if test "$PHP_PSR" != "no"; then
 		psr/http/message/uri_interface.c,
 		$ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
 
-	dnl TODO: PHP_INSTALL_HEADERS
-	dnl TODO: PHP_ADD_BUILD_DIRsss
+	PHP_INSTALL_HEADERS([ext/psr], [php_psr.h])
 fi
