@@ -15,6 +15,7 @@ if (PHP_PSR != "no") {
     ADD_SOURCES(configure_module_dirname + "\\psr\\http\\message", "response_interface.c", "psr");
     ADD_SOURCES(configure_module_dirname + "\\psr\\http\\message", "server_request_interface.c", "psr");
     ADD_SOURCES(configure_module_dirname + "\\psr\\http\\message", "stream_interface.c", "psr");
+    ADD_SOURCES(configure_module_dirname + "\\psr\\http\\message", "uploaded_file_interface.c", "psr");
     ADD_SOURCES(configure_module_dirname + "\\psr\\http\\message", "uri_interface.c", "psr");
 
     AC_DEFINE('HAVE_PSR', 1, 'Whether you have PSR');

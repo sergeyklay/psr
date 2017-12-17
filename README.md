@@ -6,6 +6,7 @@ The module implementation for the PSR standards as established by the [PHP-FIG](
 
 ## Interfaces
 
+* PSR-7: [PSR-7: HTTP message interfaces](http://www.php-fig.org/psr/psr-7/)
 * PSR-11: [Container interface](http://www.php-fig.org/psr/psr-11/)
 
 ## Requirements

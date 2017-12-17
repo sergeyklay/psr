@@ -24,6 +24,7 @@ PHP_MINIT_FUNCTION(psr)
 	PHP_PSR_MODULE_STARTUP(http_message_responseinterface);
 	PHP_PSR_MODULE_STARTUP(http_message_serverrequestinterface);
 	PHP_PSR_MODULE_STARTUP(http_message_streaminterface);
+	PHP_PSR_MODULE_STARTUP(http_message_uploadedfileinterface);
 	PHP_PSR_MODULE_STARTUP(http_message_uriinterface);
 
 	return SUCCESS;

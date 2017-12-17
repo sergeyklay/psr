@@ -12,6 +12,7 @@
 #include "psr/http/message/response_interface.h"
 #include "psr/http/message/server_request_interface.h"
 #include "psr/http/message/stream_interface.h"
+#include "psr/http/message/uploaded_file_interface.h"
 #include "psr/http/message/uri_interface.h"
 
 #endif	/* PHP_PSR_CLASS_ENTRIES_H */
