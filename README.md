@@ -23,7 +23,7 @@ You will need PHP development headers.
 If PHP was manually installed, these should be available by default.
 Otherwise, you will need to fetch them from a repository.
 
-**Note:** the package name may vary.
+**Note:** the package names may vary.
 
 ### Ubuntu and Debian (apt)
 
@@ -82,7 +82,7 @@ make
 sudo make install
 ```
 
-If you have specific php versions running:
+If you have specific PHP versions running:
 
 ```sh
 git clone https://github.com/sergeyklay/psr.git
