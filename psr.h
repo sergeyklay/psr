@@ -10,6 +10,7 @@
 #include "psr/http/message/message_interface.h"
 #include "psr/http/message/request_interface.h"
 #include "psr/http/message/response_interface.h"
+#include "psr/http/message/server_request_interface.h"
 #include "psr/http/message/stream_interface.h"
 #include "psr/http/message/uri_interface.h"
 

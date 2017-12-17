@@ -10,8 +10,6 @@
 #include <php.h>
 #include "php_psr.h"
 
-#include "uri_interface.h"
-
 BEGIN_EXTERN_C()
 
 /* {{{ arginfo */
