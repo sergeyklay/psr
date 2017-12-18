@@ -20,5 +20,5 @@ if (PHP_PSR != "no") {
 
     AC_DEFINE('HAVE_PSR', 1, 'Whether you have PSR');
 
-    PHP_INSTALL_HEADERS("ext\\psr", "php_psr.h psr\\container\\container_exception_interface.h psr\\container\\container_interface.h psr\\container\\not_found_exception_interface.h psr\\http\\messagemessage_interface.h psr\\http\\messagerequest_interface.h psr\\http\\messageresponse_interface.h psr\\http\\messageserver_request_interface.h psr\\http\\messagestream_interface.h psr\\http\\messageuploaded_file_interface.h psr\\http\\messageuri_interface.h")
+    PHP_INSTALL_HEADERS("ext\\psr", "php_psr.h")
 }

@@ -65,9 +65,9 @@ before_script:
     - ulimit -c unlimited -S || true
 
 script:
-    - $(phpenv which php) -d extension=$(pwd)/modules/psr.so --ri psr
     - make test
     - make install
-    - echo "extension=psr.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini && php --ri psr
+    - echo "extension=psr.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
+    - $(phpenv which php) --ri psr
     - make install-headers
     - tree `$(phpenv which php-config) --include-dir`/ext/psr
