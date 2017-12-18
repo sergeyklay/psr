@@ -1,9 +1,6 @@
 PSR                                                                        NEWS
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-17 DEC 2017, PSR 0.1.0
+19 DEC 2017, PSR 0.2.0
 
-- PSR-7:
-  . Implemented HTTP message interfaces: http://www.php-fig.org/psr/psr-7
-
-- PSR-11:
-  . Container interface: http://www.php-fig.org/psr/psr-11
+- PSR-16:
+  . Implemented Common Interface for Caching Libraries: http://www.php-fig.org/psr/psr-16

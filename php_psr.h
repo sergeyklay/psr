@@ -7,7 +7,7 @@
 extern zend_module_entry psr_module_entry;
 #define phpext_psr_ptr &psr_module_entry
 
-#define PHP_PSR_VERSION "0.1.0"
+#define PHP_PSR_VERSION "0.2.0"
 #define PHP_PSR_NAME "psr"
 #define PHP_PSR_AUTHOR "Phalcon Team"
 #define PHP_PSR_DESCRIPTION "The module implementation for the PSR standards as established by the PHP-FIG group."

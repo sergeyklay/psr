@@ -1,5 +1,5 @@
 # This should always correspond with php_psr.h as well as VERSION file
-version: 0.1.0-{build}
+version: 0.2.0-{build}
 
 image: Visual Studio 2017
 
