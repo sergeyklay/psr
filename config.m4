@@ -55,7 +55,10 @@ if test "$PHP_PSR" != "no"; then
 		psr/http/message/server_request_interface.c    \
 		psr/http/message/stream_interface.c            \
 		psr/http/message/uploaded_file_interface.c     \
-		psr/http/message/uri_interface.c,
+		psr/http/message/uri_interface.c               \
+		psr/simple_cache/cache_exception.c             \
+		psr/simple_cache/cache_interface.c             \
+		psr/simple_cache/invalid_argument_exception.c,
 		$ext_shared,, -DZEND_ENABLE_STATIC_TSRMLS_CACHE=1)
 
 	PHP_INSTALL_HEADERS([ext/psr], [php_psr.h])

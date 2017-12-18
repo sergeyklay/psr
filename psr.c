@@ -26,6 +26,9 @@ PHP_MINIT_FUNCTION(psr)
 	PHP_PSR_MODULE_STARTUP(http_message_streaminterface);
 	PHP_PSR_MODULE_STARTUP(http_message_uploadedfileinterface);
 	PHP_PSR_MODULE_STARTUP(http_message_uriinterface);
+	PHP_PSR_MODULE_STARTUP(simple_cache_cacheexception);
+	PHP_PSR_MODULE_STARTUP(simple_cache_cacheinterface);
+	PHP_PSR_MODULE_STARTUP(simple_cache_invalidargumentexception);
 
 	return SUCCESS;
 }
