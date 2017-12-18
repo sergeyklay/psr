@@ -36,7 +36,6 @@ env:
         - REPORT_EXIT_STATUS=1
         - NO_INTERACTION=1
         - TEST_PHP_ARGS="--show-diff"
-        - EXTRA_CFLAGS=-Wno-unicode
     matrix:
         - CC="gcc"
         - CC="clang"

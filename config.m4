@@ -27,6 +27,19 @@ else
 	AC_MSG_RESULT([$PHP_VERSION (ok)])
 fi
 
+EXTRA_CFLAGS=-Wno-unicode
+
+PHP_ARG_ENABLE(coverage, whether to enable coverage support,
+[  --enable-coverage     Enable coverage support], no, no)
+if test "$PHP_COVERAGE" != "no"; then
+    EXTRA_CFLAGS="$EXTRA_CFLAGS --coverage -fprofile-arcs -ftest-coverage"
+
+    EXTRA_LDFLAGS="--coverage"
+    PHP_SUBST(EXTRA_LDFLAGS)
+fi
+
+PHP_SUBST(EXTRA_CFLAGS)
+
 if test "$PHP_PSR" != "no"; then
 	AC_DEFINE(HAVE_PSR, 1, [Whether you have PSR])
 
