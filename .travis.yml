@@ -67,6 +67,4 @@ script:
     - make test
     - make install
     - echo "extension=psr.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-    - $(phpenv which php) --ri psr
-    - make install-headers
-    - tree `$(phpenv which php-config) --include-dir`/ext/psr
+    - $(phpenv which php) --ri psr && tree `$(phpenv which php-config) --include-dir`/ext/psr
